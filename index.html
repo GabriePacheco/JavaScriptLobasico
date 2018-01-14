@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JavaScript Lo basico - Gabriel Pacheco  </title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script type="text/javascript" src="js/json.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h1>
+					JavaScript-Lo basico Evalucion Final <br>
+					<small>Gabriel Pacheco</small>
+
+				</h1>
+			</div>
+			<div class="col-md-12">
+				<small>Este sofware contine script en el cual se defina un JSON formado por 10 objetos estudiantes, 4 botones con su respectiva acción. La primera acción es mostrar todos los objetos del JSON con sus respectivas propiedades en pantalla. La segunda acción es calcular la nota promedio y mostrarla en pantalla. La tercera acción es mostrar en pantalla el estudiante con la nota mayor. La cuarta acción es mostrar en pantalla el estudiante con la menor nota de todas. </small>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<a href="javascript:listar()" onclick="" class="btn btn-default" title="mostrar todos los objetos del JSON" >Listar</a>
+						
+						<a href="javascript:masAlta()" class="btn btn-success" title="la nota mayor" >Nota mas alta</a>
+						<a href="javascript:promedio()" class="btn btn-info" title="Calcular la nota promedioN" >Nota promedio </a>
+						<a href="javascript:masBaja()" class="btn btn-danger" title=" la menor nota de todas" >Nota mas baja</a>
+					</div>
+					
+					<div class="col-xs-4 text-success" id="masAlta"></div>
+					<div id="promedio" class="col-xs-4 text-info"></div>
+					<div id ="masBaja"class="col-xs-4 text-danger"></div>
+					<div class="col-md-12" id ="pantalla"></div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
